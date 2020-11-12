@@ -8,6 +8,7 @@ jobs:
       - run:
           name: Install dependencies
           command: npm ci
+      - run: node -v
       - run: npm run eslint -v
       - run: eslint -v
 workflows:
