@@ -9,9 +9,7 @@ jobs:
           name: Install dependencies
           command: npm ci
       - run: npm run eslint -v
-      - run:
-          name: Lint JS files
-          command: npm run lint
+      - run: eslint -v
 workflows:
   version: 2
   build-and-test:
